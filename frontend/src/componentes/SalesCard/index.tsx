@@ -31,7 +31,7 @@ function SalesCard() {
     const dmax = maxDate.toISOString().slice(0,10);
 
 
-    console.log(dmin);
+    
 
 
 
@@ -93,7 +93,7 @@ function SalesCard() {
                 <td>R${sale.amount.toFixed(2)}</td>
                 <td>
                   <div className="dsmeta-red-btn-container">
-                    <NotificationButton />
+                    <NotificationButton saleId={sale.id} />
                   </div>
   
                 </td>
